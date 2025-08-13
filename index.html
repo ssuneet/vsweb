@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vir’s Charity</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!--
+  =========================================================
+  HOW TO USE THIS FILE:
+  1) Replace the placeholder text in:
+        - Hero title + subtitle
+        - “About Vir” paragraph
+        - “About the Charity” paragraph
+        - Email and Donate button link
+  2) Put Vir’s photo in the same folder as this file and
+     update the IMG src attribute below (search for: VIR_PHOTO.jpg).
+  3) Open index.html in a browser to preview.
+  4) When ready, upload both files to GitHub.
+  =========================================================
+
+  DETAILED INSTRUCTIONS:
+
+  A) EDITING TEXT
+     - Anywhere you see words inside <p>…</p>, <h1>…</h1>, or <h2>…</h2>,
+       you can simply select and replace that text.
+     - Example: Change “Making a difference, one step at a time.” to your
+       real tagline.
+
+  B) ADDING VIR’S PHOTO
+     - Put the photo file (e.g., Vir.jpg or Vir.png) in the SAME folder as this file.
+     - Find the line below with: <img src="VIR_PHOTO.jpg" …>
+     - Change VIR_PHOTO.jpg to the exact file name (e.g., Vir.jpg).
+     - Change the alt text to briefly describe the image (helps accessibility).
+
+     PHOTO TIPS:
+     - Use JPG or PNG.
+     - Crop roughly square (e.g., 800x800). The CSS will auto-make it round.
+     - Keep file size under ~1 MB for fast loading.
+
+  C) ADDING/CHANGING THE EMAIL
+     - Find: href="mailto:someone@example.com"
+     - Replace someone@example.com with the real email (e.g., contact@vir.org).
+     - Visitors who click it will open their email app to send an email.
+
+  D) DONATION LINK
+     - Find the “Donate Now” button link: href="YOUR_DONATION_LINK_HERE"
+     - Replace with the real donation page URL (e.g., https://donate.vir.org).
+     - If you don’t have a donation page yet, you can temporarily remove the button:
+       Delete or comment out the <a class="btn">…</a> line in the Donate section.
+
+  E) PREVIEW LOCALLY
+     - Double-click index.html to open in a web browser.
+     - OR run a local server:
+       • Mac/Linux:  open Terminal → cd into the folder → python3 -m http.server 8000
+         then visit http://localhost:8000
+       • Windows:    open Command Prompt → cd into the folder → python -m http.server 8000
+         then visit http://localhost:8000
+
+  F) PUBLISH ON GITHUB PAGES
+     - Put index.html and styles.css in your repo.
+     - GitHub → Settings → Pages → Source = main branch / root → Save.
+     - After 1–2 minutes, a public link appears (share that in emails).
+
+  G) COMMON TROUBLESHOOTING
+     - Photo not showing? Make sure the file name in src="" exactly matches (case-sensitive).
+     - Weird spacing? Refresh the page or clear cache (Ctrl/Cmd + Shift + R).
+     - Text changes not appearing? Make sure you saved the file, then refresh.
+
+  =========================================================
+  -->
+</head>
+<body>
+  <!-- === Header / Hero Section ======================================= -->
+  <header class="hero">
+    <!-- EDIT THIS: Main headline -->
+    <h1>Vir’s Charity</h1>
+
+    <!-- EDIT THIS: Short one-sentence mission/tagline -->
+    <p class="subtitle">Making a difference, one step at a time.</p>
+
+    <!-- If you don’t have a donation page yet, you can delete this button -->
+    <a class="btn btn-primary" href="YOUR_DONATION_LINK_HERE" target="_blank" rel="noopener">
+      Donate Now
+    </a>
+  </header>
+
+  <!-- === About Vir (with photo) ======================================= -->
+  <section class="card two-col">
+    <div class="photo-wrap">
+      <!--
+        REPLACE VIR_PHOTO.jpg with your actual file name (e.g., Vir.jpg)
+        and update the alt text to describe the image.
+      -->
+      <img
+        src="VIR_PHOTO.jpg"
+        alt="Portrait of Vir"
+        class="profile-photo"
+      />
+      <!-- Optional small caption under the photo (delete if not needed) -->
+      <small class="caption">Vir — Founder</small>
+    </div>
+
+    <div class="text-wrap">
+      <h2>About Vir</h2>
+      <!-- EDIT THIS: Short intro about Vir (3–5 sentences is perfect) -->
+      <p>
+        Vir is a dedicated advocate for <em>[cause/area]</em>. He started this charity to
+        support <em>[who/what the charity helps]</em> and believes that small acts of kindness
+        can lead to meaningful change. Outside of his charitable work, Vir enjoys
+        <em>[optional personal detail]</em>.
+      </p>
+
+      <!-- Email contact: update the email address below -->
+      <p class="contact-line">
+        Contact: <a href="mailto:someone@example.com">someone@example.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- === About the Charity ============================================ -->
+  <section class="card">
+    <h2>About the Charity</h2>
+    <!-- EDIT THIS: What the charity does; how donations are used; a simple “why it matters” -->
+    <p>
+      Our mission is to <strong>[state the mission clearly]</strong>. We focus on
+      <em>[programs or activities]</em> that directly benefit <em>[beneficiaries]</em>.
+      Donations help fund <em>[list 2–3 concrete things: e.g., meals, kits, counseling, events]</em>.
+    </p>
+
+    <!-- Optional list of highlights (delete if you don’t want it) -->
+    <ul class="highlights">
+      <li><strong>Transparency:</strong> We share simple updates on how funds are used.</li>
+      <li><strong>Community-first:</strong> We partner with local organizations.</li>
+      <li><strong>Impact-driven:</strong> We prioritize measurable outcomes.</li>
+    </ul>
+  </section>
+
+  <!-- === How to Help / Donate ======================================== -->
+  <section class="card cta">
+    <h2>How You Can Help</h2>
+    <p>
+      The easiest way to support our work is to share our mission and make a donation.
+      Every contribution—large or small—moves us closer to our goals.
+    </p>
+
+    <!-- Update the href with your donation page URL -->
+    <a class="btn btn-primary" href="YOUR_DONATION_LINK_HERE" target="_blank" rel="noopener">
+      Donate Now
+    </a>
+  </section>
+
+  <!-- === Footer ======================================================= -->
+  <footer class="footer">
+    <!-- Optional: replace the year with the current year, or leave as-is -->
+    <p>&copy; <span id="year"></span> Vir’s Charity. All rights reserved.</p>
+  </footer>
+
+  <!-- Tiny script to auto-fill the year (safe and optional).
+       If you prefer NO JavaScript, you can delete this and type the year manually. -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

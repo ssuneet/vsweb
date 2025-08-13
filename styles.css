@@ -1,0 +1,136 @@
+/* ========================================================
+   BASIC STYLES
+   - You generally don't need to edit below to change text.
+   - If you want different colors, see the COLOR SECTION.
+   ======================================================== */
+
+:root {
+  /* ===== COLORS (edit these to change the theme) ===== */
+  --bg: #f6f7fb;           /* page background */
+  --ink: #222;             /* main text color */
+  --muted: #5b5b5b;        /* body/subtitle */
+  --card: #ffffff;         /* card background */
+  --primary: #2563eb;      /* buttons, accents (blue) */
+  --primary-dk: #1e46b7;   /* button hover */
+  --border: #e6e8ef;       /* subtle card border */
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ===== Layout containers ===== */
+.hero {
+  text-align: center;
+  padding: 64px 20px 48px;
+  background: linear-gradient(180deg, #0f172a 0%, #111827 100%); /* deep navy */
+  color: white;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  margin: 0 auto 18px;
+  max-width: 720px;
+  color: #d1d5db; /* light gray */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: 1px solid transparent;
+  transition: background .2s ease, transform .05s ease;
+}
+
+.btn-primary:hover { background: var(--primary-dk); }
+.btn-primary:active { transform: translateY(1px); }
+
+/* Cards (content sections) */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  max-width: 980px;
+  margin: 18px auto;
+  padding: 22px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03);
+}
+
+/* Two-column layout for photo + text on larger screens */
+.two-col {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 760px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Photo styles (auto round) */
+.photo-wrap {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 260px;            /* adjust if you want a larger/smaller photo */
+  height: 260px;
+  object-fit: cover;       /* crops image to fit the circle neatly */
+  border-radius: 50%;      /* makes it round */
+  border: 4px solid #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+  margin: 0 auto 10px;
+  background: #fafafa;
+}
+
+.caption {
+  color: var(--muted);
+}
+
+.text-wrap h2 {
+  margin-top: 0;
+}
+
+.highlights {
+  padding-left: 18px;
+  margin: 12px 0 0;
+}
+
+.contact-line a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.contact-line a:hover { text-decoration: underline; }
+
+.cta {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 30px 10px 50px;
+}
