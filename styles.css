@@ -134,3 +134,20 @@ img { max-width: 100%; display: block; }
   font-size: 14px;
   padding: 30px 10px 50px;
 }
+
+.site-nav {
+  background-color: #0a0e1a; /* matches your dark header */
+  padding: 12px 24px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.nav-link:hover {
+  color: #6b9fff; /* subtle hover accent */
+}
